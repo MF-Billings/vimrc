@@ -96,6 +96,8 @@ nnoremap <silent> ]B :blast<CR>
 nnoremap <F11> :!ctags --exclude=.svn --exclude=vendor --exclude=public --exclude=shared --exclude=tests --exclude=*.min.js -R
 " open current file in web browser. Specific to location of desired browser on executing computer. % shorthand for current file name
 nnoremap <F12> :!start C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %<CR>
+" print current day
+nnoremap <F11> :put =strftime('%a %d %b %Y')
 
 "file specific settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
